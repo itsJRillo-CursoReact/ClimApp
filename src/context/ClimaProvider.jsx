@@ -21,6 +21,7 @@ const ClimaProvider = ({ children }) => {
   };
 
   const consultarClima = async (datos) => {
+    setResultado("")
     setCargando(true);
     setNoResultado(false)
     try {

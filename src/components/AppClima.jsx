@@ -14,7 +14,7 @@ const AppClima = () => {
 
         {cargando ? <Spinner /> : 
         resultado?.name ? <Resultado /> :
-        noResultado ? <p className="loading">{noResultado}</p> : <p>El clima se mostrará aquí</p> }
+        noResultado ? <p className="loading">{noResultado}</p> : <p className="loading">El clima se mostrará aquí</p> }
       </main>
     </>
   );
