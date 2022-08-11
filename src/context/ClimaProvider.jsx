@@ -27,7 +27,7 @@ const ClimaProvider = ({ children }) => {
       const { ciudad, pais } = datos;
       const appID = import.meta.env.VITE_API_KEY;
 
-      const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${appID}`;
+      const url = `https://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${appID}`;
       const { data } = await axios(url);
 
       const { lat, lon } = data[0];
